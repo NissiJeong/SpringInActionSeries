@@ -10,3 +10,4 @@ Chapter2. 웹 어플리케이션 개발하기
 
 업무적용 기록1. Spring Scheduler
 @Transactional 과 @Scheduled 의 충돌로 발생했던 문제 해결에 대한 기록
+[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=Scheduler)](https://velog.io/@jnissi92/Spring-Scheduler)

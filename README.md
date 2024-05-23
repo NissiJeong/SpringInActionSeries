@@ -10,10 +10,10 @@ Chapter1. 스프링 시작하기<br>
 Chapter2. 웹 어플리케이션 개발하기<br>
 [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=Spring2)](https://velog.io/@jnissi92/spring-in-action-second)
 
-업무적용 기록1. Spring Scheduler
+업무적용 기록1. Spring Scheduler<br>
 @Transactional 과 @Scheduled 의 충돌로 발생했던 문제 해결에 대한 기록<br>
 [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=Spring_Scheduler)](https://velog.io/@jnissi92/Spring-Scheduler)
 
-Chapter3. 데이터로 작업하기
+Chapter3. 데이터로 작업하기<br>
 JPA, JDBC 적용에 대한 이야기<br>
 [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=Spring3)](https://velog.io/@jnissi92/spring-in-action-third)

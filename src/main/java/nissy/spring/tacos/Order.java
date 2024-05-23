@@ -1,5 +1,7 @@
 package nissy.spring.tacos;
 
+import java.util.Date;
+
 import org.hibernate.validator.constraints.CreditCardNumber;
 
 import jakarta.validation.constraints.Digits;
@@ -9,6 +11,9 @@ import lombok.Data;
 
 @Data
 public class Order {
+
+    private Long id;
+    private Date placedAt;
 
     //name이 빈 값이면 안된다는 어노테이션과 메세지
     @NotBlank(message = "Name is required")

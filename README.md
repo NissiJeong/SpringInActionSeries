@@ -16,4 +16,4 @@ Chapter2. 웹 어플리케이션 개발하기<br>
 
 Chapter3. 데이터로 작업하기
 JPA, JDBC 적용에 대한 이야기<br>
-[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=Spring_Scheduler)](https://velog.io/@jnissi92/spring-in-action-third)
+[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=Spring3)](https://velog.io/@jnissi92/spring-in-action-third)

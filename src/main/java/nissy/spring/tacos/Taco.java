@@ -18,5 +18,5 @@ public class Taco {
     private String name;
 
     @Size(min = 1, message = "You must choose at least 1 ingredient") //재료는 최소 1개 이상 선택해야 하고 그에 대한 오류 메세지
-    private List<String> ingredients;
+    private List<Ingredient> ingredients;
 }

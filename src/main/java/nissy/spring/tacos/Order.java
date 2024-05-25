@@ -1,6 +1,8 @@
 package nissy.spring.tacos;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.hibernate.validator.constraints.CreditCardNumber;
 
@@ -43,4 +45,10 @@ public class Order {
     //입력 값이 정확하게 3자리 숫자인지 확인할 수 있는 어노테이션
     @Digits(integer = 3, fraction = 0, message = "Invalid CVV")
     private String ccCVV;
+
+    private List<Taco> tacos = new ArrayList<>();
+
+    public void addDesign(Taco design){
+        this.tacos.add(design);
+    }
 }

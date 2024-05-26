@@ -15,7 +15,7 @@ public class ScheduleUtil {
 
 	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-	@Scheduled(fixedRate = 5000)//milliseconds 단위로, 이전 Task의 시작 시점으로부터 정의된 시간만큼 지난 후 Task를 실행
+	//@Scheduled(fixedRate = 5000)//milliseconds 단위로, 이전 Task의 시작 시점으로부터 정의된 시간만큼 지난 후 Task를 실행
 	public void reportCurrentTime() {
 		log.info("The time is now {}", dateFormat.format(new Date()));
 	}

@@ -20,11 +20,11 @@ import nissy.spring.tacos.data.OrderRepository;
 @SessionAttributes("order")
 public class OrderController {
 
-    private OrderRepository orderRepo;
+    private OrderRepository jdbcOrderRepository;
 
     @Autowired
-    public OrderController(OrderRepository orderRepo){
-        this.orderRepo = orderRepo;
+    public OrderController(OrderRepository jdbcOrderRepository){
+        this.jdbcOrderRepository = jdbcOrderRepository;
     }
 
     @GetMapping("/current")
@@ -38,7 +38,7 @@ public class OrderController {
             return "orderForm";
         }
 
-        orderRepo.save(order);
+        jdbcOrderRepository.save(order);
         sessionStatus.setComplete();
 
         return "redirect:/";

@@ -13,7 +13,7 @@ public class WebConfig implements WebMvcConfigurer {
 
     // addViewControllers() 메서드는 하나 이상의 뷰 컨트롤러를 등록하기 위해 사용할 수 있는 ViewControllerRegistry를 인자로 받는다.
     @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
+    public void addViewControllers(@SuppressWarnings("null") ViewControllerRegistry registry) {
         // 여기서는 뷰 컨트롤러가 GET 요청을 처리하는 경로인 "/"를 인자로 전달하여 addViewController()를 호출한다.
         // 이 메서드는 ViewControllerRegistration 객체를 반환한다. 
         // 그리고 "/" 경로의 요청이 전달되어야 하는 뷰로 home을 지정하기 위해 연달아 ViewControllerRegistration 객체의 setViewName()을 호출한다.

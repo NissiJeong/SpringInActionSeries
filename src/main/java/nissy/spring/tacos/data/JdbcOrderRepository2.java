@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import nissy.spring.tacos.Order;
 
 @Slf4j
-@Repository("jdbcOrderRepository2")
+@Repository
 public class JdbcOrderRepository2 implements OrderRepository{
 
     @Override

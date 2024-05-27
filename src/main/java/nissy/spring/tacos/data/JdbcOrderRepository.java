@@ -17,7 +17,7 @@ import nissy.spring.tacos.Order;
 import nissy.spring.tacos.Taco;
 
 @Slf4j
-@Repository("jdbcOrderRepository")
+@Repository
 public class JdbcOrderRepository implements OrderRepository {
 
     private SimpleJdbcInsert orderInserter;

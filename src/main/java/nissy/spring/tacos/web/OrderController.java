@@ -12,6 +12,7 @@ import org.springframework.web.bind.support.SessionStatus;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import nissy.spring.tacos.Order;
+import nissy.spring.tacos.data.JdbcOrderRepository;
 import nissy.spring.tacos.data.OrderRepository;
 
 @Slf4j
@@ -20,12 +21,8 @@ import nissy.spring.tacos.data.OrderRepository;
 @SessionAttributes("order")
 public class OrderController {
 
-    private OrderRepository jdbcOrderRepository;
-
     @Autowired
-    public OrderController(OrderRepository jdbcOrderRepository){
-        this.jdbcOrderRepository = jdbcOrderRepository;
-    }
+    private OrderRepository jdbcOrderRepository;
 
     @GetMapping("/current")
     public String orderForm(){

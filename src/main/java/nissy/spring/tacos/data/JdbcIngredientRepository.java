@@ -47,6 +47,7 @@ public class JdbcIngredientRepository implements IngredientRepository {
         return ingredient;
     }
 
+    // 스프링의 RowMapper 인터페이스를 직접 구현한 메소드
     private Ingredient mapRowToIngredient(ResultSet rs, int rowNum) throws SQLException {
         return new Ingredient(rs.getString("id"), rs.getString("name"), Ingredient.Type.valueOf(rs.getString("type")));
     }

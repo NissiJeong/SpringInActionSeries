@@ -12,7 +12,6 @@ import org.springframework.web.bind.support.SessionStatus;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import nissy.spring.tacos.Order;
-import nissy.spring.tacos.data.JdbcOrderRepository;
 import nissy.spring.tacos.data.OrderRepository;
 
 @Slf4j

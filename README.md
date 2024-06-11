@@ -21,3 +21,6 @@ JPA, JDBC 적용에 대한 이야기<br>
 ##### 📁Spring OOP1. 스프링에서 다형성 적용해보기<br>
 바쁘디 바쁜 스프링 웹 개발에서 객체지향 적용에 대한 첫번째 이야기, 다형성<br>
 [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=polymorphism)](https://velog.io/@jnissi92/spring-oop1)
+
+##### 📁Chapter4. 스프링에서 시큐리티<br>
+[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api/badge?name=Spring4)](https://velog.io/@jnissi92/spring-in-action-security)

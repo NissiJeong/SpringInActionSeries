@@ -8,6 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 import nissy.spring.tacos.Ingredient.Type;
 import nissy.spring.tacos.data.IngredientRepository;
+import nissy.spring.tacos.data.UserRepository;
 
 @SpringBootApplication
 @EnableScheduling //해당 부트 클래스에 추가하여 해당 프로젝트에서 스프링 스케줄러 사용 가능하도록 함.
@@ -18,7 +19,7 @@ public class TacosApplication {
 	}
 
 	@Bean
-	public CommandLineRunner dataLoader(IngredientRepository repo){
+	public CommandLineRunner dataLoader(IngredientRepository repo, UserRepository userRepo){
 		return new CommandLineRunner() {
 
 			@Override
@@ -33,6 +34,8 @@ public class TacosApplication {
 				repo.save(new Ingredient("JACK", "Monterrey", Type.CHEESE));
 				repo.save(new Ingredient("SLSA", "Salsa", Type.SAUCE));
 				repo.save(new Ingredient("SRCR", "Sour Cream", Type.SAUCE));
+
+				userRepo.save(new User(1, "admin", "$2a$08$lDnHPz7eUkSi6ao14Twuau08mzhWrL4kyZGGU5xfiGALO/Vxd5DOi", "admin", true));
 			}
 			
 		};
